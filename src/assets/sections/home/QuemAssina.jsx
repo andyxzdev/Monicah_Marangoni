@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-import profissionalImage from "../../assets/images/arts/monicah.webp";
+import profissionalImage from "../../images/arts/monicah.webp";
 
 const contentVariants = {
   hidden: {},

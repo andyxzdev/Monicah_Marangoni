@@ -1,13 +1,14 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
-import projeto1 from "../../assets/images/projetos/1.jpg";
-import projeto2 from "../../assets/images/projetos/2.jpg";
-import projeto3 from "../../assets/images/projetos/3.jpg";
-import projeto4 from "../../assets/images/projetos/4.jpg";
-import projeto5 from "../../assets/images/projetos/1.jpg";
-import projeto6 from "../../assets/images/projetos/2.jpg";
-import projeto7 from "../../assets/images/projetos/3.jpg";
-import projeto8 from "../../assets/images/projetos/4.jpg";
+import projeto1 from "../../images/projetos/1.jpg";
+import projeto2 from "../../images/projetos/2.jpg";
+import projeto3 from "../../images/projetos/3.jpg";
+import projeto4 from "../../images/projetos/4.jpg";
+import projeto5 from "../../images/projetos/1.jpg";
+import projeto6 from "../../images/projetos/2.jpg";
+import projeto7 from "../../images/projetos/3.jpg";
+import projeto8 from "../../images/projetos/4.jpg";
 
 const projetos = [
   {
@@ -126,6 +127,8 @@ const projectVariants = {
   },
 };
 
+const MotionLink = motion.create(Link);
+
 const ProjectCard = ({ projeto }) => {
   const gridClasses = {
     large: "lg:col-span-1 lg:row-span-2",
@@ -134,8 +137,8 @@ const ProjectCard = ({ projeto }) => {
   };
 
   return (
-    <motion.a
-      href={`/projetos/${projeto.id}`}
+    <MotionLink
+      to={`/projetos/${projeto.id}`}
       variants={projectVariants}
       className={`group relative min-h-[380px] overflow-hidden bg-[#5A291A] md:min-h-[420px] lg:min-h-0 ${
         gridClasses[projeto.tamanho]
@@ -155,13 +158,10 @@ const ProjectCard = ({ projeto }) => {
         }}
       />
 
-      {/* Gradiente para dar contraste ao texto */}
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/75 via-black/10 to-transparent transition-colors duration-500 group-hover:from-black/85" />
 
-      {/* Contorno animado */}
       <div className="pointer-events-none absolute inset-4 border border-white/0 transition-colors duration-500 group-hover:border-white/40" />
 
-      {/* Informações do projeto */}
       <div className="absolute inset-x-0 bottom-0 z-10 flex items-end justify-between gap-5 p-6 text-white md:p-8">
         <div>
           <span className="text-[10px] font-medium uppercase tracking-[0.28em] text-[#E2BE73]">
@@ -177,7 +177,7 @@ const ProjectCard = ({ projeto }) => {
           {projeto.ano}
         </span>
       </div>
-    </motion.a>
+    </MotionLink>
   );
 };
 
@@ -187,7 +187,6 @@ const ProjetosSelecionados = () => {
       id="projetos"
       className="overflow-hidden bg-[#FAF9F7] py-20 md:py-28"
     >
-      {/* Cabeçalho */}
       <motion.div
         className="mx-auto max-w-5xl px-5 text-center sm:px-8"
         variants={headerVariants}
@@ -212,9 +211,9 @@ const ProjetosSelecionados = () => {
           Cada projeto é um diagnóstico antes de ser uma obra
         </motion.h2>
 
-        <motion.a
+        <MotionLink
           variants={headerItemVariants}
-          href="/projetos"
+          to="/projetos"
           className="group mt-8 inline-flex items-center gap-4 border-b border-[#8A4B3A] pb-2 text-xs font-medium uppercase tracking-[0.3em] text-[#8A4B3A] transition-colors duration-300 hover:border-[#C9A55A] hover:text-[#C9A55A]"
         >
           Ver todos
@@ -224,10 +223,9 @@ const ProjetosSelecionados = () => {
           >
             →
           </span>
-        </motion.a>
+        </MotionLink>
       </motion.div>
 
-      {/* Galeria */}
       <motion.div
         className="mx-auto mt-16 grid max-w-[1500px] grid-cols-1 gap-3 bg-[#F4EEE8] p-3 md:grid-cols-2 lg:h-[1280px] lg:grid-flow-row-dense lg:grid-cols-3 lg:grid-rows-4"
         variants={galleryVariants}

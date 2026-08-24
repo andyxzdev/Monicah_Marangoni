@@ -1,11 +1,11 @@
 import { useLayoutEffect, useRef } from "react";
 import { motion, useAnimation } from "framer-motion";
 
-import logo1 from "../images/logo/deltabc.svg";
-import logo2 from "../images/logo/gympass.svg";
-import logo3 from "../images/logo/indelta.svg";
-import logo4 from "../images/logo/monster.svg";
-import logo5 from "../images/logo/tea.svg";
+import logo1 from "../../images/logo/deltabc.svg";
+import logo2 from "../../images/logo/gympass.svg";
+import logo3 from "../../images/logo/indelta.svg";
+import logo4 from "../../images/logo/monster.svg";
+import logo5 from "../../images/logo/tea.svg";
 
 const logos = [
   {

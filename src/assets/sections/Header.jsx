@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
-import logoM from "../../assets/images/logo/M2.webp";
+import logoM from "../images/logo/M2.webp";
 
 const socialLinks = {
   linkedin: "#",
@@ -12,23 +13,23 @@ const socialLinks = {
 const menuItems = [
   {
     label: "Início",
-    href: "#inicio",
+    to: "/",
   },
   {
     label: "Sobre",
-    href: "#quem-assina",
+    to: "/sobre",
   },
   {
     label: "Projetos",
-    href: "#projetos",
+    to: "/projetos",
   },
   {
     label: "Imprensa",
-    href: "#instagram",
+    to: "/imprensa",
   },
   {
     label: "Contato",
-    href: "#contato",
+    to: "/contato",
   },
 ];
 
@@ -102,6 +103,8 @@ const MenuIcon = ({ open }) => (
   </div>
 );
 
+const MotionLink = motion.create(Link);
+
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -167,9 +170,8 @@ const Header = () => {
       }}
     >
       <div className="mx-auto flex h-20 max-w-[1500px] items-center justify-between px-5 sm:px-8 lg:h-24 lg:px-12">
-        {/* Logo */}
-        <a
-          href="#inicio"
+        <Link
+          to="/"
           onClick={closeMenu}
           className="flex shrink-0 items-center gap-4"
           aria-label="Voltar ao início"
@@ -197,28 +199,25 @@ const Header = () => {
               Arquitetura corporativa
             </span>
           </div>
-        </a>
+        </Link>
 
-        {/* Menu desktop */}
         <nav
           className="hidden items-center gap-8 xl:flex"
           aria-label="Navegação principal"
         >
           {menuItems.map((item) => (
-            <a
+            <Link
               key={item.label}
-              href={item.href}
+              to={item.to}
               className="relative text-[10px] font-medium uppercase tracking-[0.3em] text-[#5D4B45] transition-colors duration-300 after:absolute after:-bottom-2 after:left-0 after:h-px after:w-0 after:bg-[#9A604E] after:transition-all after:duration-300 hover:text-[#9A604E] hover:after:w-full"
             >
               {item.label}
-            </a>
+            </Link>
           ))}
         </nav>
 
-        {/* Ações desktop */}
         <div className="hidden items-center gap-5 lg:flex">
           <div className="flex items-center gap-4 border-r border-[#8A6C61]/20 pr-5">
-            {/* LinkedIn temporário */}
             <a
               href={socialLinks.linkedin}
               onClick={(event) =>
@@ -232,7 +231,6 @@ const Header = () => {
               <LinkedInIcon className="h-4 w-4" />
             </a>
 
-            {/* Instagram */}
             <a
               href={socialLinks.instagram}
               target="_blank"
@@ -243,7 +241,6 @@ const Header = () => {
               <InstagramIcon className="h-4 w-4" />
             </a>
 
-            {/* Pinterest temporário */}
             <a
               href={socialLinks.pinterest}
               onClick={(event) =>
@@ -262,13 +259,12 @@ const Header = () => {
             href={whatsappUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex min-h-10 items-center justify-center rounded-full border border-[#9A604E] px-7 text-[10px] font-medium uppercase tracking-[0.25em] text-[#9A604E] transition-colors duration-300 hover:bg-[#9A604E] hover:text-white"
+            className="inline-flex min-h-10 items-center justify-center border border-[#9A604E] px-7 text-[10px] font-medium uppercase tracking-[0.25em] text-[#9A604E] transition-colors duration-300 hover:bg-[#9A604E] hover:text-white"
           >
             Iniciar projeto
           </a>
         </div>
 
-        {/* Botão mobile */}
         <button
           type="button"
           aria-label={menuOpen ? "Fechar menu" : "Abrir menu"}
@@ -280,7 +276,6 @@ const Header = () => {
         </button>
       </div>
 
-      {/* Menu mobile */}
       <AnimatePresence>
         {menuOpen && (
           <motion.div
@@ -304,9 +299,9 @@ const Header = () => {
           >
             <nav className="flex flex-col" aria-label="Navegação mobile">
               {menuItems.map((item, index) => (
-                <motion.a
+                <MotionLink
                   key={item.label}
-                  href={item.href}
+                  to={item.to}
                   onClick={closeMenu}
                   className="border-b border-[#733522]/15 py-5 font-serif text-4xl font-light italic text-[#733522]"
                   initial={{
@@ -323,7 +318,7 @@ const Header = () => {
                   }}
                 >
                   {item.label}
-                </motion.a>
+                </MotionLink>
               ))}
             </nav>
 
@@ -336,7 +331,6 @@ const Header = () => {
               Iniciar projeto
             </a>
 
-            {/* Redes sociais mobile */}
             <div className="mt-10 flex items-center gap-6">
               <a
                 href={socialLinks.linkedin}

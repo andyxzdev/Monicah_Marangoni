@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-import manifestoImage from "../../assets/images/arts/manifesto.webp";
+import manifestoImage from "../../images/arts/manifesto.webp";
 
 const contentVariants = {
   hidden: {},

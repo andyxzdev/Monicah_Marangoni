@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const whatsappNumber = "5511999999999";
 
@@ -111,7 +112,6 @@ const Footer = () => {
           amount: 0.2,
         }}
       >
-        {/* Chamada principal */}
         <div>
           <motion.span
             variants={itemVariants}
@@ -145,12 +145,10 @@ const Footer = () => {
           </motion.a>
         </div>
 
-        {/* Informações */}
         <motion.div
           variants={itemVariants}
           className="grid content-start gap-12 sm:grid-cols-2"
         >
-          {/* Endereço */}
           <div>
             <span className="text-[10px] font-medium uppercase tracking-[0.35em] text-white/45">
               Endereço
@@ -165,7 +163,6 @@ const Footer = () => {
             </address>
           </div>
 
-          {/* Contato */}
           <div>
             <span className="text-[10px] font-medium uppercase tracking-[0.35em] text-white/45">
               Contato
@@ -188,14 +185,12 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Redes sociais */}
           <div className="sm:col-span-2">
             <span className="text-[10px] font-medium uppercase tracking-[0.35em] text-white/45">
               Social
             </span>
 
             <div className="mt-5 flex items-center gap-5">
-              {/* LinkedIn temporário */}
               <a
                 href={socialLinks.linkedin}
                 onClick={(event) =>
@@ -209,7 +204,6 @@ const Footer = () => {
                 <LinkedInIcon className="h-5 w-5" />
               </a>
 
-              {/* Instagram */}
               <a
                 href={socialLinks.instagram}
                 target="_blank"
@@ -220,7 +214,6 @@ const Footer = () => {
                 <InstagramIcon className="h-5 w-5" />
               </a>
 
-              {/* Pinterest temporário */}
               <a
                 href={socialLinks.pinterest}
                 onClick={(event) =>
@@ -238,7 +231,6 @@ const Footer = () => {
         </motion.div>
       </motion.div>
 
-      {/* Rodapé inferior */}
       <motion.div
         className="mx-auto mt-24 flex max-w-[1400px] flex-col gap-5 border-t border-white/15 pt-7 text-[10px] font-medium uppercase tracking-[0.3em] text-white/40 sm:flex-row sm:items-center sm:justify-between"
         initial={{
@@ -259,12 +251,16 @@ const Footer = () => {
           © {currentYear} Monicah Marangoni · Arquitetura corporativa
         </p>
 
-        <a
-          href="/politica-de-privacidade"
+        <Link
+          to="/politica-de-privacidade"
           className="transition-colors duration-300 hover:text-[#C9A55A]"
         >
           Política de privacidade
-        </a>
+        </Link>
+
+        <span className="text-white/35">
+          desenvolvido por agencia panda creative
+        </span>
       </motion.div>
     </footer>
   );

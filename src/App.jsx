@@ -1,36 +1,32 @@
-import HeroScroll from "./assets/layout/HeroScroll";
-import CarrosselLogos from "./assets/layout/CarrosselLogos";
-import QuemAssina from "./assets/layout/QuemAssina";
-import Manifesto from "./assets/layout/Manifesto";
-import Processo from "./assets/layout/Processo";
-import Especialidades from "./assets/layout/Especialidades";
-import ProjetosSelecionados from "./assets/layout/ProjetosSelecionados";
-import Numeros from "./assets/layout/Numeros";
-import InstagramSection from "./assets/layout/InstagramSection";
-import Feedbacks from "./assets/layout/Feedbacks";
-import Footer from "./assets/layout/Footer";
-import Header from "./assets/layout/Header";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+
+import SiteLayout from "./layouts/SiteLayout";
+import ContatoPage from "./pages/ContatoPage";
+import HomePage from "./pages/HomePage";
+import ImprensaPage from "./pages/ImprensaPage";
+import PoliticaDePrivacidadePage from "./pages/PoliticaDePrivacidadePage";
+import ProjetoDetalhePage from "./pages/ProjetoDetalhePage";
+import ProjetosPage from "./pages/ProjetosPage";
+import SobrePage from "./pages/SobrePage";
 
 function App() {
   return (
-    <>
-      <Header />
-
-      <main className="w-full overflow-x-hidden">
-        <HeroScroll />
-        <CarrosselLogos />
-        <QuemAssina />
-        <Manifesto />
-        <Processo />
-        <Especialidades />
-        <ProjetosSelecionados />
-        <Numeros />
-        <InstagramSection />
-        <Feedbacks />
-      </main>
-
-      <Footer />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route element={<SiteLayout />}>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/sobre" element={<SobrePage />} />
+          <Route path="/projetos" element={<ProjetosPage />} />
+          <Route path="/projetos/:id" element={<ProjetoDetalhePage />} />
+          <Route path="/imprensa" element={<ImprensaPage />} />
+          <Route path="/contato" element={<ContatoPage />} />
+          <Route
+            path="/politica-de-privacidade"
+            element={<PoliticaDePrivacidadePage />}
+          />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 

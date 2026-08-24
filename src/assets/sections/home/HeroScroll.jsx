@@ -2,8 +2,8 @@ import { useLayoutEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-import heroVideo from "../video/hero-arquitetura.webm";
-import logoM from "../images/logo/M.svg";
+import heroVideo from "../../video/hero-arquitetura.webm";
+import logoM from "../../images/logo/M.svg";
 
 gsap.registerPlugin(ScrollTrigger);
 
