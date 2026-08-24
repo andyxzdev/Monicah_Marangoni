@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
-import logoM from "../images/logo/M2.webp";
+import logoM from "../assets/images/logo/M2.webp";
 
 const socialLinks = {
   linkedin: "#",
