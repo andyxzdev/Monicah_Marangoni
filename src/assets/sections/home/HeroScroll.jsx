@@ -99,20 +99,18 @@ export default function HeroScroll() {
       {/* Vídeo da hero */}
       <video
         ref={videoRef}
-        src={heroVideo}
-        className="absolute inset-0 z-0 h-full w-full object-cover object-center will-change-transform"
+        className="absolute inset-0 z-0 h-full w-full object-cover object-center"
         autoPlay
         muted
         loop
         playsInline
-        preload="auto"
-        onCanPlay={(event) => {
-          event.currentTarget.play().catch(() => {});
-        }}
+        preload="metadata"
+        aria-hidden="true"
         onError={(event) => {
           console.error("Erro ao carregar o vídeo:", event.currentTarget.error);
         }}
       >
+        <source src={heroVideo} type="video/webm" />
         Seu navegador não suporta vídeos.
       </video>
 
