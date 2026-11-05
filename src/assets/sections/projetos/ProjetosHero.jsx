@@ -1,3 +1,5 @@
+// Used through JSX member tags; ESLint does not count those as variable references.
+// eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 
 const categorias = [
@@ -16,6 +18,10 @@ const categorias = [
   {
     label: "Residencial",
     value: "RESIDENCIAL",
+  },
+  {
+    label: "Social",
+    value: "SOCIAL",
   },
 ];
 

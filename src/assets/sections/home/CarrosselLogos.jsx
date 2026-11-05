@@ -1,4 +1,6 @@
 import { useLayoutEffect, useRef } from "react";
+// motion is used through JSX member tags, which ESLint does not count as references.
+// eslint-disable-next-line no-unused-vars
 import { motion, useAnimation } from "framer-motion";
 
 import logo1 from "../../images/logo/deltabc.svg";

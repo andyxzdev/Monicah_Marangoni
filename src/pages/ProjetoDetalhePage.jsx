@@ -21,34 +21,16 @@ const ProjetoDetalhePage = () => {
             Voltar para projetos
           </Link>
 
-          <div className="mt-10 grid gap-10 lg:grid-cols-[1.25fr_0.75fr] lg:items-end lg:gap-20">
+          <div className="mt-10 grid gap-10 lg:grid-cols-1">
             <div>
               <span className="text-[10px] font-medium uppercase tracking-[0.28em] text-[#9A604E]">
-                {projeto.categoria}
+                {projeto.categoriaLabel}
               </span>
               <h1 className="mt-5 max-w-4xl text-5xl font-light italic leading-[0.95] tracking-[-0.025em] text-[#733522] sm:text-7xl lg:text-[96px]">
                 {projeto.titulo}
               </h1>
             </div>
 
-            <div className="grid grid-cols-2 gap-6 border-t border-[#733522]/20 pt-5 lg:mb-2">
-              <div>
-                <span className="text-[10px] font-medium uppercase tracking-[0.22em] text-[#9A604E]">
-                  Local
-                </span>
-                <p className="mt-2 text-sm font-light text-[#625A56]">
-                  {projeto.local}
-                </p>
-              </div>
-              <div>
-                <span className="text-[10px] font-medium uppercase tracking-[0.22em] text-[#9A604E]">
-                  Ano
-                </span>
-                <p className="mt-2 text-sm font-light text-[#625A56]">
-                  {projeto.ano}
-                </p>
-              </div>
-            </div>
           </div>
 
           <div className="relative mt-12 h-[58vh] min-h-[420px] overflow-hidden bg-[#DED3C8] md:mt-16 lg:h-[680px]">
@@ -59,9 +41,6 @@ const ProjetoDetalhePage = () => {
             />
             <div className="pointer-events-none absolute inset-5 border border-white/45" />
           </div>
-          <p className="mt-8 text-lg font-light text-[#625A56]">
-            {projeto.descricao}
-          </p>
         </div>
       </section>
     </main>

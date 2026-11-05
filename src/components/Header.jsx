@@ -7,7 +7,8 @@ import logoM from "../assets/images/logo/M2.webp";
 const socialLinks = {
   linkedin: "#",
   instagram: "https://www.instagram.com/monicahmarangoni_arquiteta",
-  pinterest: "#",
+  facebook:
+    "https://www.facebook.com/MonicahMarangoniArquitetura/?ref=PROFILE_EDIT_xav_ig_profile_page_web#",
 };
 
 const menuItems = [
@@ -69,7 +70,7 @@ const LinkedInIcon = ({ className = "" }) => (
   </svg>
 );
 
-const PinterestIcon = ({ className = "" }) => (
+const FacebookIcon = ({ className = "" }) => (
   <svg
     viewBox="0 0 24 24"
     fill="currentColor"
@@ -77,7 +78,7 @@ const PinterestIcon = ({ className = "" }) => (
     className={className}
     aria-hidden="true"
   >
-    <path d="M12 2a10 10 0 0 0-3.64 19.31c-.09-1.58-.02-3.48.39-5.22l1.29-5.46s-.32-.65-.32-1.6c0-1.5.87-2.62 1.95-2.62.92 0 1.37.69 1.37 1.52 0 .93-.59 2.31-.9 3.59-.26 1.07.54 1.95 1.6 1.95 1.92 0 3.39-2.02 3.39-4.95 0-2.59-1.86-4.4-4.52-4.4-3.08 0-4.89 2.31-4.89 4.7 0 .93.36 1.93.81 2.47.09.11.1.2.07.32l-.3 1.23c-.05.2-.16.24-.37.15-1.39-.65-2.26-2.68-2.26-4.31 0-3.51 2.55-6.73 7.35-6.73 3.86 0 6.86 2.75 6.86 6.43 0 3.84-2.42 6.93-5.78 6.93-1.13 0-2.19-.59-2.55-1.28l-.69 2.64c-.25.97-.93 2.19-1.38 2.93.83.26 1.7.4 2.61.4A10 10 0 0 0 12 2Z" />
+    <path d="M13.5 21v-8.2h2.76l.41-3.2H13.5V7.56c0-.93.26-1.56 1.6-1.56h1.71V3.14C16 3.05 15.15 3 14.16 3c-2.56 0-4.31 1.56-4.31 4.43V9.6H7v3.2h2.85V21h3.65Z" />
   </svg>
 );
 
@@ -242,16 +243,13 @@ const Header = () => {
             </a>
 
             <a
-              href={socialLinks.pinterest}
-              onClick={(event) =>
-                handleTemporaryLink(event, socialLinks.pinterest)
-              }
+              href={socialLinks.facebook}
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Pinterest"
+              aria-label="Facebook"
               className="text-[#5D4B45] transition-colors duration-300 hover:text-[#C9A55A]"
             >
-              <PinterestIcon className="h-4 w-4" />
+              <FacebookIcon className="h-4 w-4" />
             </a>
           </div>
 
@@ -356,16 +354,13 @@ const Header = () => {
               </a>
 
               <a
-                href={socialLinks.pinterest}
-                onClick={(event) =>
-                  handleTemporaryLink(event, socialLinks.pinterest)
-                }
+                href={socialLinks.facebook}
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Pinterest"
+                aria-label="Facebook"
                 className="text-[#733522] transition-colors duration-300 hover:text-[#C9A55A]"
               >
-                <PinterestIcon className="h-5 w-5" />
+                <FacebookIcon className="h-5 w-5" />
               </a>
             </div>
           </motion.div>

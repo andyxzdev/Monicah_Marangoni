@@ -1,3 +1,5 @@
+// Used through JSX member tags; ESLint does not count those as variable references.
+// eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 
 const itemVariants = {
@@ -93,11 +95,12 @@ const ContatoInfo = () => {
           </a>
 
           <a
-            href="#"
-            onClick={(event) => event.preventDefault()}
+            href="https://www.facebook.com/MonicahMarangoniArquitetura/?ref=PROFILE_EDIT_xav_ig_profile_page_web#"
+            target="_blank"
+            rel="noopener noreferrer"
             className="transition-colors duration-300 hover:text-[#C9A55A]"
           >
-            Pinterest · Monicah Marangoni
+            Facebook · Monicah Marangoni
           </a>
         </div>
       </motion.div>

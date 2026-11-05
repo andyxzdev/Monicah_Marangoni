@@ -1,3 +1,5 @@
+// Used through JSX member tags; ESLint does not count those as variable references.
+// eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 
 import instagram1 from "../../images/projetos/1.jpg";
@@ -6,8 +8,6 @@ import instagram3 from "../../images/projetos/3.jpg";
 import instagram4 from "../../images/projetos/4.jpg";
 import instagram5 from "../../images/projetos/1.jpg";
 import instagram6 from "../../images/projetos/2.jpg";
-import instagram7 from "../../images/projetos/3.jpg";
-import instagram8 from "../../images/projetos/4.jpg";
 
 const InstagramIcon = ({ className = "" }) => {
   return (

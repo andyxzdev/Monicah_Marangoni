@@ -1,4 +1,6 @@
 import { useEffect, useRef, useState } from "react";
+// motion is used through JSX member tags, which ESLint does not count as references.
+// eslint-disable-next-line no-unused-vars
 import { animate, motion, useInView } from "framer-motion";
 
 const indicadores = [

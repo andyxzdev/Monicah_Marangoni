@@ -1,4 +1,6 @@
 import { useState } from "react";
+// Used through JSX member tags; ESLint does not count those as variable references.
+// eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 
 import api from "../../../services/api";

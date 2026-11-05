@@ -1,3 +1,5 @@
+// Used through JSX member tags; ESLint does not count those as variable references.
+// eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 
 const especialidades = [
@@ -144,7 +146,7 @@ const Especialidades = () => {
                   {especialidade.numero}
                 </span>
 
-                <h3 className="mt-5 text-4xl font-light italic leading-none text-[#E9CDA9] sm:text-5xl">
+                <h3 className="mt-5 text-3xl font-light italic leading-none text-[#E9CDA9] sm:text-4xl">
                   {especialidade.titulo}
                 </h3>
 

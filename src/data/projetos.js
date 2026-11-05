@@ -1,91 +1,57 @@
-import projeto1 from "../assets/images/projetos/1.jpg";
-import projeto2 from "../assets/images/projetos/2.jpg";
-import projeto3 from "../assets/images/projetos/3.jpg";
-import projeto4 from "../assets/images/projetos/4.jpg";
+import airCharter from "../assets/projetos-atualizados/air-charter.jpg";
+import beetech from "../assets/projetos-atualizados/beetech-remessa-online.jpg";
+import bebemix from "../assets/projetos-atualizados/bebemix.jpg";
+import clinovi1 from "../assets/projetos-atualizados/clinovi-1.jpg";
+import clinovi3 from "../assets/projetos-atualizados/clinovi-3.jpg";
+import delta from "../assets/projetos-atualizados/delta.jpg";
+import febraban from "../assets/projetos-atualizados/febraban-cyber.jpeg";
+import glanbia from "../assets/projetos-atualizados/glanbia.jpg";
+import gympass1 from "../assets/projetos-atualizados/gympass-1.jpeg";
+import gympass2 from "../assets/projetos-atualizados/gympass-2.jpeg";
+import gi from "../assets/projetos-atualizados/gi-selecionadas.jpg";
+import marcia from "../assets/projetos-atualizados/marcia-apto.jpg";
+import marilia from "../assets/projetos-atualizados/marilia-juquehy.jpg";
+import monster from "../assets/projetos-atualizados/monster.jpg";
+import petit from "../assets/projetos-atualizados/petit-patisserie.jpg";
+import quiosque from "../assets/projetos-atualizados/quiosque-igarata.jpg";
+import shoebiz from "../assets/projetos-atualizados/shoebiz.jpg";
+import zigMundi from "../assets/projetos-atualizados/zig-mundi-londrina.jpg";
+import decorSocial from "../assets/projetos sociais/decor social/SolidRockBrasil_depois_DecorSocial_MathoFotografia_038.jpg";
 
 const projetos = [
-  [
-    1,
-    projeto1,
-    "Arquitetura corporativa",
-    "Alpargatas \u00b7 Retrofit",
-    "S\u00e3o Paulo \u00b7 SP",
-    "2024",
-    "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-  ],
-  [
-    2,
-    projeto2,
-    "Arquitetura residencial",
-    "Casa Morumbi",
-    "S\u00e3o Paulo \u00b7 SP",
-    "2023",
-    "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-  ],
-  [
-    3,
-    projeto3,
-    "Arquitetura corporativa",
-    "Ginfor",
-    "S\u00e3o Paulo \u00b7 SP",
-    "2022",
-    "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-  ],
-  [
-    4,
-    projeto4,
-    "Interiores corporativos",
-    "Delta BC \u00b7 Interiores",
-    "S\u00e3o Paulo \u00b7 SP",
-    "2024",
-    "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-  ],
-  [
-    5,
-    projeto1,
-    "Arquitetura residencial",
-    "Casa de Campo",
-    "S\u00e3o Paulo \u00b7 SP",
-    "2022",
-    "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-  ],
-  [
-    6,
-    projeto2,
-    "Arquitetura comercial",
-    "Loja Zig Mundi",
-    "S\u00e3o Paulo \u00b7 SP",
-    "2021",
-    "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-  ],
-  [
-    7,
-    projeto3,
-    "Interiores corporativos",
-    "3\u00ba Cart\u00f3rio",
-    "S\u00e3o Paulo \u00b7 SP",
-    "2023",
-    "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-  ],
-  [
-    8,
-    projeto4,
-    "Arquitetura residencial",
-    "Resid\u00eancia Contempor\u00e2nea",
-    "S\u00e3o Paulo \u00b7 SP",
-    "2024",
-    "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    ,
-  ],
-].map(([id, imagem, categoria, titulo, local, ano, descricao]) => ({
+  ["air-charter", airCharter, "CORPORATIVO", "Air Charter"],
+  ["beetech", beetech, "CORPORATIVO", "Beetech · Remessa Online"],
+  ["clinovi-1", clinovi1, "CORPORATIVO", "Clinovi 1"],
+  ["clinovi-3", clinovi3, "CORPORATIVO", "Clinovi 3"],
+  ["delta", delta, "CORPORATIVO", "Delta"],
+  ["febraban-cyber", febraban, "CORPORATIVO", "Febraban · Cyber"],
+  ["gi", gi, "CORPORATIVO", "GI"],
+  ["glanbia", glanbia, "CORPORATIVO", "Glanbia"],
+  ["gympass-1", gympass1, "CORPORATIVO", "Gympass 1"],
+  ["gympass-2", gympass2, "CORPORATIVO", "Gympass 2"],
+  ["monster", monster, "CORPORATIVO", "Monster"],
+  ["shoebiz", shoebiz, "CORPORATIVO", "Shoebiz"],
+  ["marilia-juquehy", marilia, "RESIDENCIAL", "Marília · Juquehy"],
+  ["marcia-apto", marcia, "RESIDENCIAL", "Márcia · Apartamento"],
+  ["quiosque-igarata", quiosque, "RESIDENCIAL", "Quiosque Igaratá"],
+  ["bebemix", bebemix, "COMERCIAL", "BebêMix"],
+  ["petit-patisserie", petit, "COMERCIAL", "Petit Patisserie"],
+  ["zig-mundi", zigMundi, "COMERCIAL", "Zig Mundi · Londrina"],
+  ["decor-social", decorSocial, "SOCIAL", "Decor Social · Solid Rock Brasil"],
+].map(([id, imagem, categoria, titulo], index) => ({
   id,
   imagem,
   categoria,
+  categoriaLabel: {
+    CORPORATIVO: "Arquitetura corporativa",
+    RESIDENCIAL: "Arquitetura residencial",
+    COMERCIAL: "Arquitetura comercial",
+    SOCIAL: "Projeto social",
+  }[categoria],
   titulo,
-  local,
-  ano,
-  descricao,
+  tamanho: index % 6 === 0 ? "destaque" : index % 3 === 1 ? "alto" : "normal",
 }));
 
-export const getProjetoById = (id) =>
-  projetos.find((projeto) => projeto.id === Number(id));
+export default projetos;
+
+export const getProjetoById = (id) => projetos.find((projeto) => projeto.id === id);
