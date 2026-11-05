@@ -2,7 +2,7 @@
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 
-const whatsappNumber = "5511999999999";
+const whatsappNumber = "551129760618";
 
 const mensagem = encodeURIComponent(
   "Olá! Gostaria de conversar sobre um projeto de arquitetura.",

@@ -51,10 +51,10 @@ const ContatoInfo = () => {
         </span>
 
         <a
-          href="tel:+551122833481"
+          href="tel:+551129760618"
           className="mt-5 block font-serif text-2xl font-light italic text-[#733522] transition-colors duration-300 hover:text-[#C9A55A]"
         >
-          (11) 2283-3481
+          (11) 2976-0618
         </a>
       </motion.div>
 

@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
-const whatsappNumber = "5511999999999";
+const whatsappNumber = "551129760618";
 
 const whatsappMessage = encodeURIComponent(
   "Olá! Gostaria de conversar sobre um projeto de arquitetura.",
@@ -173,10 +173,10 @@ const Footer = () => {
 
             <div className="mt-5 flex flex-col items-start gap-3">
               <a
-                href="tel:+551122833481"
+                href="tel:+551129760618"
                 className="font-serif text-xl text-[#E9CDA9] transition-colors duration-300 hover:text-[#C9A55A]"
               >
-                (11) 2283-3481
+                (11) 2976-0618
               </a>
 
               <a
