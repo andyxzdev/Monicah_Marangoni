@@ -7,14 +7,11 @@ const MotionImg = motion.img;
 const MotionSpan = motion.span;
 const MotionH2 = motion.h2;
 
-const projetosSelecionados = [
-  projetos[0],
-  projetos[12],
-  projetos[15],
-  projetos[4],
-  projetos[13],
-  projetos[17],
-];
+const projetosSelecionados = projetos.filter((projeto) =>
+  ["monster", "gympass", "beetech", "shoebiz", "clinovi", "delta"].includes(
+    projeto.id,
+  ),
+);
 
 const headerVariants = {
   hidden: {},

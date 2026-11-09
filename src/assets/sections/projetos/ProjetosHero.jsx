@@ -12,6 +12,10 @@ const categorias = [
     value: "CORPORATIVO",
   },
   {
+    label: "Retrofit",
+    value: "RETROFIT",
+  },
+  {
     label: "Comercial",
     value: "COMERCIAL",
   },
